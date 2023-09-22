@@ -17,9 +17,11 @@ SecretClientOptions options = new SecretClientOptions()
 };
 var client = new SecretClient(new Uri("https://ruixkeyvault.vault.azure.net/"), new DefaultAzureCredential(), options);
 
-KeyVaultSecret secret = client.GetSecret("mySecret");
+//KeyVaultSecret secret = client.GetSecret("mySecret");
 
-string secretValue = secret.Value;
+//string secretValue = secret.Value;
+
+string secretValue = "abcde";
 
 app.MapGet("/", () => secretValue);
 
