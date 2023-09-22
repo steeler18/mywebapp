@@ -26,7 +26,7 @@ string testKeyVault()
 
     var cred = new DefaultAzureCredential();
 
-    var client = new SecretClient(new Uri("https://ruixkeyvault.vault.azure.net/"), cred, options);
+    var client = new SecretClient(new Uri("https://ruixkeyvault2.vault.azure.net/"), cred, options);
 
     Console.WriteLine("I love Hailey and Caity");
 
